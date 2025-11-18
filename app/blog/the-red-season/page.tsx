@@ -31,40 +31,75 @@ export default function RedSeasonPage() {
             />
 
             <article className="prose prose-lg max-w-none mb-8 blog-font">
-              <p>
-                It was a Wednesday afternoon when the phone rang. I was at my desk, trying to figure out how to stretch our tiny budget to cover the cost of sanitary pads for 200 girls. On the other end of the line was a woman I’ll call Sarah. Her voice was a whisper, the kind you use when you’re trying not to let the person next to you know you’re crying.
+              <p style={{ textIndent: '1.5em' }}>
+                They call it the season of red; red ribbons on gifts, red dresses in Christmas photos, red lights
+                blinking from street corners. But somewhere, in quieter rooms and hidden moments, another red season
+                unfolds. One that doesn’t come with carols or confetti, the season of womanhood. Menstrual life. A
+                rhythm as ancient as creation itself, yet still spoken of in whispers.
               </p>
 
-              <p>
-                “I’m sorry to bother you,” she started, “but I saw your number on a flyer. It said you help women.”
+              <h2 className="pl-6 font-semibold">When the World Wears Red</h2>
+              <p style={{ textIndent: '1.5em' }}>
+                December has always fascinated me; it is a month where the world seems to bloom again in joy,
+                generosity, and color. Everywhere you turn, there’s a celebration of life. And maybe that’s what
+                menstruation is, too: a biological celebration of life’s potential.
               </p>
 
-              <p>
-                I told her that’s what we were here for. She took a deep breath and then the story tumbled out. She was a teacher, a mother of two, and for the past year, she had been bleeding. Non-stop. Some days it was a light spotting, other days it was a heavy flow that left her weak and dizzy. She had been to doctors who gave her pills that didn’t work, and finally, one told her she needed a hysterectomy. She was 38.
+              <p style={{ textIndent: '1.5em' }}>
+                But while some hang ornaments, others hide sanitary pads in purses, praying no one notices the
+                discomfort beneath the smiles. And that’s where the contrast hurts: One red is celebrated. The other is
+                silenced.
               </p>
 
-              <p>
-                “He said it so casually,” she whispered, her voice cracking. “Like he was telling me I needed to have a tooth pulled. He didn’t understand. I feel like less of a woman.”
+              <p style={{ textIndent: '1.5em' }}>
+                At Beulah Walk of Hope, we’ve met young girls who see their periods not as natural rhythms but as monthly
+                battles of shame, of affordability, of misinformation. And we’ve met women who soldier through cramps
+                while still cooking, serving, laughing, and leading through the Christmas rush.
               </p>
 
-              <p>
-                I listened. I didn’t offer advice or medical opinions. I just listened. I told her about other women I knew who had walked through similar fire. I told her she wasn’t alone. I told her that her worth was not tied to her womb.
+              <h2 className="pl-6 font-semibold">The Unseen Christmas Story</h2>
+              <p style={{ textIndent: '1.5em' }}>
+                Maybe if we look closely, the story of Christmas itself; of birth, of womanhood, of sacrifice, is deeply
+                intertwined with menstruation. Because before Mary held the baby in a manger, she had a body that bled
+                like every woman’s. Before the miracle, there was a woman’s biology quietly doing its work in divine
+                cycles.
               </p>
 
-              <p>
-                We call it “The Red Season.” It’s a term we coined for the silent battles women fight with their bodies. It’s the agony of infertility, the confusion of menopause, the pain of endometriosis, the shame of a miscarriage. It’s the seasons of life that are often shrouded in silence, the ones you’re not supposed to talk about at dinner parties.
+              <p style={{ textIndent: '1.5em' }}>
+                Menstruation is not a curse; it is the calendar of creation, the rhythm that shows that life is possible.
+                So when we speak of joy to the world, perhaps we should also sing respect to the women whose bodies carry
+                that miracle every month.
               </p>
 
-              <p>
-                At Beulah Walk of Hope, we are breaking the silence. We are creating spaces where women can talk about their red seasons without shame or judgment. We are providing access to accurate health information, connecting women with compassionate healthcare providers, and most importantly, we are reminding them that they are not broken.
+              <h2 className="pl-6 font-semibold">Periods and Presents</h2>
+              <p style={{ textIndent: '1.5em' }}>
+                This festive season, as we wrap gifts for loved ones, we are also wrapping care packs, sanitary pads,
+                wipes, pain relief, for girls who can’t afford the comfort many take for granted. Because Christmas
+                should not just be about the gifts under the tree, but the dignity we extend to others. And no girl
+                should have to choose between food and sanitary protection.
               </p>
 
-              <p>
-                Sarah’s story is not unique. There are millions of women like her, suffering in silence, feeling isolated and alone. Our work is to find them, to sit with them, to walk with them. It’s not glamorous. It’s not about big events or fancy campaigns. It’s about the quiet, steady work of holding space for another human being.
+              <h2 className="pl-6 font-semibold">A Red Reminder</h2>
+              <p style={{ textIndent: '1.5em' }}>
+                As women, we carry so many calendars within us. The calendar of work. The calendar of love. The calendar
+                of cycles. And through it all, we keep showing up, hosting, nurturing, creating magic even when our
+                bodies are crying for rest. So this season, may we give ourselves permission to pause. To sip water. To
+                listen to our bodies. To remember that the same red that colors the streets this December flows through
+                us as a symbol of resilience and renewal.
               </p>
 
-              <p>
-                It’s about being the voice on the other end of the phone that says, “I hear you. I see you. You are not alone.”
+              <h2 className="pl-6 font-semibold">The Real Festivity</h2>
+              <p style={{ textIndent: '1.5em' }}>
+                The real celebration is not in fireworks or feasts, it’s in the strength of women who keep giving life,
+                in every sense of the word. So here’s to the girls and women who smile (or don’t smile) through cramps,
+                host Christmas parties while in pain, and still show up with grace. You are the rhythm that keeps the
+                world turning.
+              </p>
+
+              <p style={{ textIndent: '1.5em' }}>
+                This Christmas, join Beulah Walk of Hope in spreading period positivity and dignity. Sponsor a menstrual
+                care kit. Start a conversation. Remind a girl that her body is not a burden but a blessing. Let us make
+                this festive season one of comfort, compassion, and crimson courage.
               </p>
             </article>
 
