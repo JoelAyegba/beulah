@@ -7,7 +7,7 @@ import Link from "next/link"
 const upcomingEvents = [
   {
     id: 7,
-    title: "Feed 1000 Families in Nigeria",
+    title: "Operation Feed Families In Nigeria",
     date: "December 20, 2025",
     time: "9:00 AM - 3:00 PM",
     location: "Beulah walk of hope foundation Training Center, Abuja, Nigeria",
