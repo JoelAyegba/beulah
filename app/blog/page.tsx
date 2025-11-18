@@ -9,6 +9,30 @@ import { useState } from "react"
 
 const blogPosts = [
   {
+    id: 8,
+    slug: "The-Quiet-Face-of-Hope",
+    title: "The Quiet Face of Hope",
+    excerpt:
+      "At Beulah Walk of Hope, we’ve learned that hope isn’t always loud or perfect — sometimes, it’s messy, quiet, and deeply human. Read how everyday acts of love and courage are helping women rise, heal, and walk toward a world where hope never runs out.",
+    category: "Reflections",
+    author: "Beulah Walk of Hope Foundation",
+    date: "November 4, 2025",
+    readTime: "5 min read",
+    image: "/face.jpg",
+  },
+  {
+    id: 12,
+    slug: "Silent-Battles",
+    title: "Silent Battles",
+    excerpt:
+      "A story of resilience, community, and the quiet strength of women supporting each other through life's silent battles.",
+    category: "Impact Stories",
+    author: "Beulah Walk of Hope Foundation",
+    date: "November 10, 2025",
+    readTime: "5 min read",
+    image: "/outreach-3.jpg",
+  },
+  {
     id: 11,
     slug: "the-power-of-one",
     title: "The Power of One",
@@ -44,15 +68,9 @@ const blogPosts = [
     readTime: "6 min read",
     image: "/african-women-smiling-together-in-community-empowe.jpg",
   },
-
-
-
-
-
-
   {
     id: 7,
-  slug: "The-Story-of-Beulah-Walk-of-Hope",
+    slug: "The-Story-of-Beulah-Walk-of-Hope",
     title: "The Story of Beulah Walk of Hope",
     excerpt:
       "A personal account of how Beulah Walk of Hope began — from small acts of love to a movement restoring women through safe spaces and support.",
@@ -61,18 +79,6 @@ const blogPosts = [
     date: "April 11, 2025",
     readTime: "7 min read",
     image: "/blog.jpg",
-  },
-  {
-    id: 8,
-  slug: "The-Quiet-Face-of-Hope",
-    title: "The Quiet Face of Hope",
-    excerpt:
-      "At Beulah Walk of Hope, we’ve learned that hope isn’t always loud or perfect — sometimes, it’s messy, quiet, and deeply human. Read how everyday acts of love and courage are helping women rise, heal, and walk toward a world where hope never runs out.",
-    category: "Reflections",
-    author: "Beulah Walk of Hope Foundation",
-    date: "November 4, 2025",
-    readTime: "5 min read",
-    image: "/face.jpg",
   },
 ]
 

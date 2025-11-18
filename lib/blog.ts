@@ -13,9 +13,13 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
   const blogDirectory = path.join(process.cwd(), 'app', 'blog');
   const slugs = fs.readdirSync(blogDirectory).filter(name => fs.statSync(path.join(blogDirectory, name)).isDirectory());
 
+  const desiredSlugs = ['The-Quiet-Face-of-Hope', 'Silent-Battles'];
+  const otherSlugs = slugs.filter(slug => !desiredSlugs.includes(slug));
+  const orderedSlugs = [...desiredSlugs, ...otherSlugs];
+
   const posts: BlogPost[] = [];
 
-  for (const slug of slugs) {
+  for (const slug of orderedSlugs) {
     const postPath = path.join(blogDirectory, slug, 'page.tsx');
     if (fs.existsSync(postPath)) {
       const fileContent = fs.readFileSync(postPath, 'utf-8');
