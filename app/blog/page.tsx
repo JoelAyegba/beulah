@@ -78,7 +78,7 @@ const blogPosts = [
     author: "Beulah Walk of Hope Foundation",
     date: "April 11, 2025",
     readTime: "7 min read",
-    image: "/blog.jpg",
+    image: "/story.jpg",
   },
 ]
 

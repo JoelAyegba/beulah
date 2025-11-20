@@ -211,7 +211,7 @@ export default function HomePage() {
 
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold font-[family-name:var(--font-playfair)] mb-3">Feed 1000 Families in Nigeria</h3>
+                <h3 className="text-xl font-bold font-[family-name:var(--font-playfair)] mb-3">Operation Feed Families In Nigeria</h3>
                 <div className="space-y-2 mb-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4 text-primary" />

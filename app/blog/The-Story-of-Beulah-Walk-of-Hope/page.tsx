@@ -24,7 +24,7 @@ export default function StoryPage() {
 
             <div className="relative w-full h-96 mb-8">
               <Image
-                src="/blog.jpg"
+                src="/story.jpg"
                 alt="The Story of Beulah Walk of Hope"
                 layout="fill"
                 objectFit="cover"
