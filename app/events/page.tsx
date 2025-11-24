@@ -22,6 +22,20 @@ const upcomingEvents = [
 
 const pastEvents = [
   {
+    id: 6,
+    title: "Supporting Education: A Scholarship Initiative",
+    date: "June 15, 2025",
+    time: "All Day",
+    location: "God's Grace Nursery and Primary School, Abuja, Nigeria",
+    type: "Scholarship",
+    capacity: "Multiple Students",
+    description:
+      "Beulah Walk of Hope provided scholarships to cover school fees for several students, ensuring they can continue their education.",
+    image: "/fees.jpg",
+    status: "Completed",
+    link: "/events/school-fees-payment",
+  },
+  {
     id: 5,
     title: "A Visit of Hope: Supporting a Family in Need",
     date: "July 12, 2025",
