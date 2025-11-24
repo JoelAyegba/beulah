@@ -2,9 +2,19 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
 export const metadata = {
-  title: "Silent Battles",
+  title: "Silent Battles - Beulah walk of hope foundation",
   description:
     "Not all battles are loud. At Beulah Walk of Hope, we walk with women fighting silent struggles — loss, grief, and healing — reminding them that softness is strength and no one heals alone.",
+  openGraph: {
+    title: "Silent Battles - Beulah walk of hope foundation",
+    description:
+      "Not all battles are loud. At Beulah Walk of Hope, we walk with women fighting silent struggles — loss, grief, and healing — reminding them that softness is strength and no one heals alone.",
+    images: "/outreach-3.jpg",
+    url: "https://www.beulahwalkofhopefoundation.org/blog/Silent-Battles",
+  },
+  alternates: {
+    canonical: "https://www.beulahwalkofhopefoundation.org/blog/Silent-Battles",
+  },
 }
 
 export default function SilentBattlesPage() {

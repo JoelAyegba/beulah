@@ -3,9 +3,19 @@ import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 
 export const metadata = {
-  title: "The Power of One",
+  title: "The Power of One - Beulah walk of hope foundation",
   description:
     "There’s something deeply sacred about one. One can make a whole difference; one decision, one word, one act of service.",
+  openGraph: {
+    title: "The Power of One - Beulah walk of hope foundation",
+    description:
+      "There’s something deeply sacred about one. One can make a whole difference; one decision, one word, one act of service.",
+    images: "/power.jpg",
+    url: "https://www.beulahwalkofhopefoundation.org/blog/the-power-of-one",
+  },
+  alternates: {
+    canonical: "https://www.beulahwalkofhopefoundation.org/blog/the-power-of-one",
+  },
 }
 
 export default function StoryPage() {

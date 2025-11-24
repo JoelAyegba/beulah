@@ -3,7 +3,17 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Users, BookOpen, Briefcase, Heart, Globe, Camera, Check } from "lucide-react"
+import { Check } from "lucide-react"
+
+export const metadata = {
+  title: "Volunteer - Beulah walk of hope foundation",
+  description: "Join Beulah walk of hope foundation as a volunteer and make a difference in the lives of women across Africa. Explore our volunteer opportunities.",
+  openGraph: {
+    title: "Volunteer - Beulah walk of hope foundation",
+    description: "Join Beulah walk of hope foundation as a volunteer and make a difference in the lives of women across Africa. Explore our volunteer opportunities.",
+    image: "/african-women-volunteers-helping-community.jpg",
+  },
+}
 
 const volunteerOpportunities = [
   {

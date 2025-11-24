@@ -3,9 +3,19 @@ import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 
 export const metadata = {
-  title: "The Red Season",
+  title: "The Red Season - Beulah walk of hope foundation",
   description:
     "A story of resilience, community, and the quiet strength of women supporting each other through life's silent battles.",
+  openGraph: {
+    title: "The Red Season - Beulah walk of hope foundation",
+    description:
+      "A story of resilience, community, and the quiet strength of women supporting each other through life's silent battles.",
+    images: "/outreach-2.jpg",
+    url: "https://www.beulahwalkofhopefoundation.org/blog/the-red-season",
+  },
+  alternates: {
+    canonical: "https://www.beulahwalkofhopefoundation.org/blog/the-red-season",
+  },
 }
 
 export default function RedSeasonPage() {

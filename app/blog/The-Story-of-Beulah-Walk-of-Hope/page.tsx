@@ -3,9 +3,19 @@ import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 
 export const metadata = {
-  title: "The Story of Beulah Walk of Hope",
+  title: "The Story of Beulah Walk of Hope - Beulah walk of hope foundation",
   description:
     "Discover the inspiring story behind Beulah Walk of Hope — a movement born from love, purpose, and the desire to create safe spaces where women can heal, grow, and be restored",
+  openGraph: {
+    title: "The Story of Beulah Walk of Hope - Beulah walk of hope foundation",
+    description:
+      "Discover the inspiring story behind Beulah Walk of Hope — a movement born from love, purpose, and the desire to create safe spaces where women can heal, grow, and be restored",
+    images: "/story.jpg",
+    url: "https://www.beulahwalkofhopefoundation.org/blog/The-Story-of-Beulah-Walk-of-Hope",
+  },
+  alternates: {
+    canonical: "https://www.beulahwalkofhopefoundation.org/blog/The-Story-of-Beulah-Walk-of-Hope",
+  },
 }
 
 export default function StoryPage() {

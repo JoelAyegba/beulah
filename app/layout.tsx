@@ -18,7 +18,13 @@ export const metadata: Metadata = {
   title: "Beulah walk of hope foundation",
   description:
     "Beulah walk of hope foundation is dedicated to empowering women through advocacy, skill development, and social impact initiatives across Nigeria and Africa.",
-  generator: "v0.app",
+  metadataBase: new URL("https://www.beulahwalkofhopefoundation.org"),
+  openGraph: {
+    title: "Beulah walk of hope foundation",
+    description:
+      "Beulah walk of hope foundation is dedicated to empowering women through advocacy, skill development, and social impact initiatives across Nigeria and Africa.",
+    image: "/placeholder-logo.png",
+  },
 }
 
 export default function RootLayout({

@@ -3,6 +3,16 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight, Quote } from "lucide-react"
 
+export const metadata = {
+  title: "Impact - Beulah walk of hope foundation",
+  description: "Read inspiring stories of women empowered by Beulah walk of hope foundation. Discover the real impact of our programs.",
+  openGraph: {
+    title: "Impact - Beulah walk of hope foundation",
+    description: "Read inspiring stories of women empowered by Beulah walk of hope foundation. Discover the real impact of our programs.",
+    image: "/african-woman-entrepreneur-in-her-shop-smiling-con.jpg",
+  },
+}
+
 const impactStories = [
   {
     id: 3,

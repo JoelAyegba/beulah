@@ -5,8 +5,13 @@ import { BookOpen, Sparkles, Users, Briefcase, GraduationCap, TrendingUp, ArrowR
 import Link from "next/link"
 
 export const metadata = {
-  title: "Our Programs - Hope Horizon",
-  description: "Explore Hope Horizon's comprehensive programs for women empowerment, education, and entrepreneurship.",
+  title: "Our Programs - Beulah walk of hope foundation",
+  description: "Explore Beulah walk of hope foundation's comprehensive programs for women empowerment, education, and entrepreneurship.",
+  openGraph: {
+    title: "Our Programs - Beulah walk of hope foundation",
+    description: "Explore Beulah walk of hope foundation's comprehensive programs for women empowerment, education, and entrepreneurship.",
+    image: "/african-women-in-classroom-learning-computer-ski.jpg",
+  },
 }
 
 export default function ProgramsPage() {

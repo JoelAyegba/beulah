@@ -7,6 +7,16 @@ import Link from "next/link"
 import { Calendar, Clock, ArrowRight, User } from "lucide-react"
 import { useState } from "react"
 
+export const metadata = {
+  title: "Blog - Beulah walk of hope foundation",
+  description: "Insights, stories, and updates on women's empowerment, education, and community development across Africa.",
+  openGraph: {
+    title: "Blog - Beulah walk of hope foundation",
+    description: "Insights, stories, and updates on women's empowerment, education, and community development across Africa.",
+    image: "/blog.jpg",
+  },
+}
+
 const blogPosts = [
   {
     id: 8,

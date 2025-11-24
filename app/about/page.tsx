@@ -6,6 +6,11 @@ import Link from "next/link"
 export const metadata = {
   title: "About Us - Beulah walk of hope foundation",
   description: "Learn about Beulah walk of hope foundation's mission, vision, and the team dedicated to empowering women across Africa.",
+  openGraph: {
+    title: "About Us - Beulah walk of hope foundation",
+    description: "Learn about Beulah walk of hope foundation's mission, vision, and the team dedicated to empowering women across Africa.",
+    image: "/african-women-leadership-training-workshop.jpg",
+  },
 }
 
 export default function AboutPage() {

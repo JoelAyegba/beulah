@@ -3,9 +3,19 @@ import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 
 export const metadata = {
-  title: "The Quiet Face of Hope",
+  title: "The Quiet Face of Hope - Beulah walk of hope foundation",
   description:
     "At Beulah Walk of Hope, we’ve learned that hope isn’t always loud or perfect — sometimes, it’s messy, quiet, and deeply human. Read how everyday acts of love and courage are helping women rise, heal, and walk toward a world where hope never runs out.",
+  openGraph: {
+    title: "The Quiet Face of Hope - Beulah walk of hope foundation",
+    description:
+      "At Beulah Walk of Hope, we’ve learned that hope isn’t always loud or perfect — sometimes, it’s messy, quiet, and deeply human. Read how everyday acts of love and courage are helping women rise, heal, and walk toward a world where hope never runs out.",
+    images: "/face.jpg",
+    url: "https://www.beulahwalkofhopefoundation.org/blog/The-Quiet-Face-of-Hope",
+  },
+  alternates: {
+    canonical: "https://www.beulahwalkofhopefoundation.org/blog/The-Quiet-Face-of-Hope",
+  },
 }
 
 export default function QuietFacePage() {

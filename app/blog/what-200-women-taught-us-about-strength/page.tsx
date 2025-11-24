@@ -3,8 +3,17 @@ import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 
 export const metadata = {
-  title: "What 200 Women Taught us About Strength",
+  title: "What 200 Women Taught us About Strength - Beulah walk of hope foundation",
   description: "Strength isn't just about endurance. Discover the profound lessons on strength, grace, and hope learned from the stories of 200 widows at our recent outreach event.",
+  openGraph: {
+    title: "What 200 Women Taught us About Strength - Beulah walk of hope foundation",
+    description: "Strength isn't just about endurance. Discover the profound lessons on strength, grace, and hope learned from the stories of 200 widows at our recent outreach event.",
+    images: "/african-women-smiling-together-in-community-empowe.jpg",
+    url: "https://www.beulahwalkofhopefoundation.org/blog/what-200-women-taught-us-about-strength",
+  },
+  alternates: {
+    canonical: "https://www.beulahwalkofhopefoundation.org/blog/what-200-women-taught-us-about-strength",
+  },
 }
 
 export default function StoryPage() {

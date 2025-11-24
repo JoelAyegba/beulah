@@ -4,6 +4,16 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin, Clock, Users, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
+export const metadata = {
+  title: "Events - Beulah walk of hope foundation",
+  description: "Explore upcoming and past events by Beulah walk of hope foundation. Join us in empowering women across Africa.",
+  openGraph: {
+    title: "Events - Beulah walk of hope foundation",
+    description: "Explore upcoming and past events by Beulah walk of hope foundation. Join us in empowering women across Africa.",
+    image: "/chritmas.jpg",
+  },
+}
+
 const upcomingEvents = [
   {
     id: 7,
