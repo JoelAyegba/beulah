@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Check } from "lucide-react"
+import { Check, BookOpen, Briefcase, Users, Globe, Camera, Heart } from "lucide-react"
 
 export const metadata = {
   title: "Volunteer - Beulah walk of hope foundation",
