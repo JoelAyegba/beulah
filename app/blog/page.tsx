@@ -16,6 +16,18 @@ export const metadata = {
 
 const blogPosts = [
   {
+    id: 13,
+    slug: "still-carrying-light",
+    title: "Still Carrying Light: A New Year Reflection",
+    excerpt:
+      "A reflection on pain, gratitude, and hope as we step into a new year. From pain, I carried gratitude. From confusion, I carried wisdom. From survival, I carried faith.",
+    category: "Reflections",
+    author: "Elfrida Egwuche",
+    date: "January 20, 2026",
+    readTime: "6 min read",
+    image: "/new-year-reflection.jpg",
+  },
+  {
     id: 8,
     slug: "The-Quiet-Face-of-Hope",
     title: "The Quiet Face of Hope",
