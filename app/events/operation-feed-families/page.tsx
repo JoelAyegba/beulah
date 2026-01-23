@@ -36,9 +36,6 @@ export default function OperationFeedFamiliesPage() {
                 </figcaption>
               </figure>
 
-              <p>
-                We look forward to continuing our mission and reaching even more families in our future outreach programs.
-              </p>
             </article>
 
             <div className="text-center">
