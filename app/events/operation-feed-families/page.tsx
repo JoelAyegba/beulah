@@ -23,9 +23,9 @@ export default function OperationFeedFamiliesPage() {
 
             <article className="prose prose-lg max-w-none mb-8 blog-font">
               <p>
-                Our "Operation Feed Families In Nigeria" event was a heartwarming success. We came together to support over 1000 families across Nigeria during the festive season, ensuring they had food on their tables and joy in their hearts.
+                A heartfelt thank you to all our incredible partners and sponsors for making it possible! Your support is fueling a movement for women's health breaking barriers and driving change we couldn't do this without you!
               </p>
-              
+
               <figure className="my-8">
                 <video className="w-full rounded-lg shadow-lg" controls poster="/outreach-1.jpg">
                   <source src="/christmas event video.mp4" type="video/mp4" />
@@ -35,10 +35,6 @@ export default function OperationFeedFamiliesPage() {
                   Highlights from the event
                 </figcaption>
               </figure>
-
-              <p>
-                The event was filled with smiles, gratitude, and a strong sense of community. We are incredibly thankful to our volunteers and donors who made this possible. Your support helps us continue to make a tangible difference in the lives of those who need it most.
-              </p>
 
               <p>
                 We look forward to continuing our mission and reaching even more families in our future outreach programs.

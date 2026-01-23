@@ -14,7 +14,7 @@ export const metadata = {
   },
 }
 
-const upcomingEvents = [
+const upcomingEvents: any[] = [
   // {
   //   id: 7,
   //   title: "Operation Feed Families In Nigeria",
@@ -40,7 +40,7 @@ const pastEvents = [
     type: "Outreach",
     capacity: "1000 Families",
     description:
-      "Join us in our mission to feed 1000 families across Nigeria this festive season.",
+      "A heartfelt thank you to all our incredible partners and sponsors for making it possible! Your support is fueling a movement for women's health breaking barriers and driving change we couldn't do this without you!",
     image: "/outreach-1.jpg",
     status: "Completed",
     link: "/events/operation-feed-families",

@@ -231,7 +231,7 @@ export default function HomePage() {
                   </div>
 
                   <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
-                    {"Our 'Operation Feed Families' event was a nice success. We provided food and support to over 1000 families, bringing joy and relief during the festive season. Watch the highlights to see the impact of your support."}
+                    {"A heartfelt thank you to all our incredible partners and sponsors for making it possible! Your support is fueling a movement for women's health breaking barriers and driving change we couldn't do this without you!"}
                   </p>
 
                   <Button size="lg" asChild>
