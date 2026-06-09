@@ -24,7 +24,7 @@ export default function StoryPage() {
       <section className="relative py-20 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 pl-6">The Power of One</h1>
+            <h1 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-playfair)] mb-6 pl-6">The Power of One</h1>
 
             <div className="text-sm text-muted-foreground mb-6">
               <span className="font-medium">Beulah Walk of Hope Foundation</span>
@@ -36,9 +36,9 @@ export default function StoryPage() {
               <Image
                 src="/power.jpg"
                 alt="The Power of One"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
+                fill
+                sizes="(max-width: 768px) 100vw, 768px"
+                className="object-cover rounded-lg"
               />
             </div>
 

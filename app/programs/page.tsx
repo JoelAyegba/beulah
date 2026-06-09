@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { BookOpen, Sparkles, Users, Briefcase, GraduationCap, TrendingUp, ArrowRight } from "lucide-react"
 import Link from "next/link"
+import { StatCard } from "@/components/stat-card"
 
 export const metadata = {
   title: "Our Programs - Beulah walk of hope foundation",
@@ -61,22 +62,19 @@ export default function ProgramsPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-            <Card className="text-center">
+            <Card className="transition-shadow hover:shadow-lg">
               <CardContent className="p-8">
-                <div className="text-4xl font-bold text-primary mb-2">3</div>
-                <p className="text-muted-foreground">Core Programs</p>
+                <StatCard value="3" label="Core Programs" accent="primary" />
               </CardContent>
             </Card>
-            <Card className="text-center">
+            <Card className="transition-shadow hover:shadow-lg">
               <CardContent className="p-8">
-                <div className="text-4xl font-bold text-secondary mb-2">2,500+</div>
-                <p className="text-muted-foreground">Women Trained</p>
+                <StatCard value="2,500+" label="Women Trained" accent="brand" />
               </CardContent>
             </Card>
-            <Card className="text-center">
+            <Card className="transition-shadow hover:shadow-lg">
               <CardContent className="p-8">
-                <div className="text-4xl font-bold text-accent mb-2">85%</div>
-                <p className="text-muted-foreground">Success Rate</p>
+                <StatCard value="85%" label="Success Rate" accent="primary" />
               </CardContent>
             </Card>
           </div>

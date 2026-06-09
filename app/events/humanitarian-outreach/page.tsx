@@ -13,7 +13,7 @@ export default function HumanitarianOutreachPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 pl-6">Humanitarian Outreach — Food Distribution</h1>
+            <h1 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-playfair)] mb-6 pl-6">Humanitarian Outreach — Food Distribution</h1>
 
             <div className="text-sm text-muted-foreground mb-6">
               <span className="font-medium">Beulah Walk of Hope Foundation</span>
@@ -25,9 +25,9 @@ export default function HumanitarianOutreachPage() {
               <Image
                 src="/outreach-1.jpg"
                 alt="Volunteers handing food parcels to community members"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
+                fill
+                sizes="(max-width: 768px) 100vw, 768px"
+                className="object-cover rounded-lg"
               />
             </div>
 
@@ -53,9 +53,9 @@ export default function HumanitarianOutreachPage() {
                 <Image
                   src="/outreach-2.jpg"
                   alt="Community members receiving food packages"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  className="object-cover rounded-lg"
                 />
               </div>
 
@@ -68,9 +68,9 @@ export default function HumanitarianOutreachPage() {
                 <Image
                   src="/outreach-3.jpg"
                   alt="Group photo of volunteers in pink shirts"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  className="object-cover rounded-lg"
                 />
               </div>
 

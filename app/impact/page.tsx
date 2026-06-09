@@ -102,10 +102,10 @@ export default function ImpactPage() {
                     <Quote className="absolute top-4 left-4 h-8 w-8 text-primary/20" />
                     <blockquote className="italic text-foreground pl-8">{story.quote}</blockquote>
                   </div>
-                  <div className="flex items-start gap-3 p-4 bg-secondary/10 rounded-lg">
-                    <div className="w-2 h-2 rounded-full bg-secondary mt-2" />
+                  <div className="flex items-start gap-3 p-4 bg-brand/10 rounded-lg">
+                    <div className="w-2 h-2 rounded-full bg-brand mt-2" />
                     <div>
-                      <div className="font-semibold text-sm text-secondary mb-1">IMPACT</div>
+                      <div className="font-semibold text-sm text-brand mb-1">IMPACT</div>
                       <p className="text-sm text-muted-foreground">{story.impact}</p>
                     </div>
                   </div>

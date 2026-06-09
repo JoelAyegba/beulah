@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, Instagram } from "lucide-react"
 import emailjs from 'emailjs-com'
 
 const contactInfo = [
@@ -29,6 +29,12 @@ const contactInfo = [
         icon: Clock,
         title: "Office Hours",
         details: ["Monday - Friday: 9:00 AM - 5:00 PM", "Saturday: 10:00 AM - 2:00 PM", "Sunday: Closed"],
+    },
+    {
+        icon: Instagram,
+        title: "Social Media",
+        details: ["instagram.com/beulahwalkofhope"],
+        link: "https://www.instagram.com/beulahwalkofhope",
     },
 ]
 
@@ -167,7 +173,7 @@ export default function ContactContent() {
                             <h2 className="text-3xl font-bold font-[family-name:var(--font-playfair)] mb-6">Contact Information</h2>
                             <div className="space-y-6">
                                 {contactInfo.map((info) => (
-                                    <Card key={info.title}>
+                                    <Card key={info.title} className="transition-shadow hover:shadow-md">
                                         <CardContent className="p-6">
                                             <div className="flex items-start gap-4">
                                                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -196,6 +202,20 @@ export default function ContactContent() {
                                                                 <a
                                                                     key={index}
                                                                     href={`tel:${phoneNumber}`}
+                                                                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                                                                >
+                                                                    {detail}
+                                                                </a>
+                                                            );
+                                                        }
+                                                        // Check if the item has an external link
+                                                        if ('link' in info && info.link) {
+                                                            return (
+                                                                <a
+                                                                    key={index}
+                                                                    href={info.link}
+                                                                    target="_blank"
+                                                                    rel="noopener noreferrer"
                                                                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
                                                                 >
                                                                     {detail}

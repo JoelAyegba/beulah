@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Check, BookOpen, Briefcase, Users, Globe, Camera, Heart } from "lucide-react"
+import Link from "next/link"
 
 export const metadata = {
   title: "Volunteer - Beulah walk of hope foundation",
@@ -299,11 +300,12 @@ export default function VolunteerPage() {
             }
           </p>
           <Button
+            asChild
             size="lg"
             variant="outline"
             className="bg-transparent border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground/10"
           >
-            Contact Volunteer Coordinator
+            <Link href="/contact">Contact Volunteer Coordinator</Link>
           </Button>
         </div>
       </section>

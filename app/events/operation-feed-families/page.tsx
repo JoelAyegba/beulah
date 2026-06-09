@@ -13,7 +13,7 @@ export default function OperationFeedFamiliesPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 pl-6">Operation Feed Families In Nigeria</h1>
+            <h1 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-playfair)] mb-6 pl-6">Operation Feed Families In Nigeria</h1>
 
             <div className="text-sm text-muted-foreground mb-6 pl-6">
               <span className="font-medium">Beulah Walk of Hope Foundation</span>

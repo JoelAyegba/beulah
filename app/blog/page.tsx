@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 import { Calendar, Clock, ArrowRight, User } from "lucide-react"
 
 export const metadata = {
@@ -117,10 +117,13 @@ export default function BlogPage() {
     <main>
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
+          <Image
             src="/african-women-leadership-training-workshop.jpg"
-            alt="Blog"
-            className="w-full h-full object-cover"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/85" />
         </div>
@@ -148,15 +151,17 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <Card key={post.id} className="group hover:shadow-lg transition-shadow overflow-hidden">
-                <div className="relative overflow-hidden">
-                  <img
+                <div className="relative h-48 overflow-hidden">
+                  <Image
                     src={post.image || "/placeholder.svg"}
                     alt={post.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 line-clamp-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold font-[family-name:var(--font-playfair)] mb-3 line-clamp-2 group-hover:text-primary transition-colors">
                     {post.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed mb-4 line-clamp-3">{post.excerpt}</p>

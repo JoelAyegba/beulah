@@ -13,7 +13,7 @@ export default function StillCarryingLightPage() {
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="max-w-3xl mx-auto">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-6 pl-6">Still Carrying Light: A New Year Reflection</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-playfair)] mb-6 pl-6">Still Carrying Light: A New Year Reflection</h1>
 
                         <article className="prose prose-lg max-w-none mb-8 blog-font pl-6">
                             <p>

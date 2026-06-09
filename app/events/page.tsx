@@ -1,8 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Calendar, MapPin, Clock, Users, ArrowRight } from "lucide-react"
-import Link from "next/link"
+import { Calendar } from "lucide-react"
+import { SectionHeading } from "@/components/section-heading"
+import { EventCard } from "@/components/event-card"
 
 export const metadata = {
   title: "Events - Beulah walk of hope foundation",
@@ -31,6 +29,34 @@ const upcomingEvents: any[] = [
 ];
 
 const pastEvents = [
+  {
+    id: 9,
+    title: "Women Wellness & Medical Outreach: Fertility Support",
+    date: "May 23, 2026",
+    time: "9:00 AM - 4:00 PM",
+    location: "Abuja, Nigeria",
+    type: "Outreach",
+    capacity: "6 Grant Recipients",
+    description:
+      "A one-day outreach dedicated to the health, wellness, and empowerment of women, where six women each received a medical support grant of ₦250,000 towards their fertility journey.",
+    image: "/fertility-grant-1.jpg",
+    status: "Completed",
+    link: "/events/women-wellness-medical-outreach",
+  },
+  {
+    id: 8,
+    title: "Mental Health Awareness Event",
+    date: "May 23, 2026",
+    time: "9:00 AM - 4:00 PM",
+    location: "Abuja, Nigeria",
+    type: "Outreach",
+    capacity: "Community Gathering",
+    description:
+      "A community gathering dedicated to women's mental health — breaking the silence around stress, grief, and burnout, and reminding women that asking for help is a sign of strength.",
+    image: "/mental-health-1.jpg",
+    status: "Completed",
+    link: "/events/mental-health-awareness",
+  },
   {
     id: 7,
     title: "Operation Feed Families In Nigeria",
@@ -131,145 +157,50 @@ const pastEvents = [
   },
 ];
 
-const eventTypes = ["All Events", "Conference", "Workshop", "Outreach", "Webinar", "Fundraiser", "Retreat"]
-
 export default function EventsPage() {
   return (
     <main>
-      {/* Upcoming Events */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-playfair)] mb-4">
-              Upcoming Events
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              {"Discover opportunities to learn, connect, and grow with our community."}
-            </p>
-          </div>
-
-          <div className="space-y-8">
-            {upcomingEvents.map((event) => (
-              <Card key={event.id} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="grid grid-cols-1 lg:grid-cols-3">
-                  <div className="relative h-64 lg:h-auto">
-                    <img
-                      src={event.image || "/placeholder.svg"}
-                      alt={event.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <CardContent className="lg:col-span-2 p-6 lg:p-8">
-                    <div className="flex flex-col h-full">
-                      <div className="flex items-start justify-between mb-4">
-                        <h3 className="text-2xl font-bold font-[family-name:var(--font-playfair)] flex-1">
-                          {event.title}
-                        </h3>
-                        <Badge variant="secondary" className="ml-4">
-                          {event.status}
-                        </Badge>
-                      </div>
-
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 text-sm text-muted-foreground">
-                        <div className="flex items-center gap-2">
-                          <Calendar className="h-4 w-4 text-primary" />
-                          <span>{event.date}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Clock className="h-4 w-4 text-primary" />
-                          <span>{event.time}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <MapPin className="h-4 w-4 text-primary" />
-                          <span>{event.location}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Users className="h-4 w-4 text-primary" />
-                          <span>{event.capacity}</span>
-                        </div>
-                      </div>
-
-                      <p className="text-muted-foreground leading-relaxed mb-6 flex-1">{event.description}</p>
-
-                      <div className="flex flex-col sm:flex-row gap-3">
-
-                        {/* Learn More removed per request */}
-                      </div>
-                    </div>
-                  </CardContent>
-                </div>
-              </Card>
-            ))}
-          </div>
+      {/* Hero */}
+      <section className="relative py-32 bg-cover bg-center" style={{ backgroundImage: "url('/african-women-smiling-together-in-community-empowe.jpg')" }}>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-black/95" />
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <Calendar className="h-12 w-12 mx-auto mb-6 text-white" />
+          <h1 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-playfair)] mb-6 text-balance text-white text-shadow-hero">
+            Our Events
+          </h1>
+          <p className="text-lg max-w-2xl mx-auto leading-relaxed text-white/90">
+            {"From medical outreaches to community gatherings, explore the moments where hope becomes action — and see how, together, we walk beside women across Africa."}
+          </p>
         </div>
       </section>
 
-      {/* Past Events */}
-      <section className="py-20 bg-muted">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-playfair)] mb-4">
-              Past Events
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              {"See what we've accomplished together in recent events."}
-            </p>
+      {/* Upcoming Events */}
+      {upcomingEvents.length > 0 && (
+        <section className="py-20 reveal">
+          <div className="container mx-auto px-4">
+            <SectionHeading
+              title="Upcoming Events"
+              subtitle="Discover opportunities to learn, connect, and grow with our community."
+            />
+            <div className="space-y-8">
+              {upcomingEvents.map((event) => (
+                <EventCard key={event.id} event={event} layout="horizontal" />
+              ))}
+            </div>
           </div>
+        </section>
+      )}
 
+      {/* Past Events */}
+      <section className="py-20 bg-muted reveal">
+        <div className="container mx-auto px-4">
+          <SectionHeading
+            title="Past Events"
+            subtitle="See what we've accomplished together in recent events."
+          />
           <div className="space-y-8">
             {pastEvents.map((event) => (
-              <Card key={event.id} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="grid grid-cols-1 lg:grid-cols-3">
-                  <div className="relative h-64 lg:h-auto">
-                    <img
-                      src={event.image || "/placeholder.svg"}
-                      alt={event.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <CardContent className="lg:col-span-2 p-6 lg:p-8">
-                    <div className="flex flex-col h-full">
-                      <div className="flex items-start justify-between mb-4">
-                        <h3 className="text-2xl font-bold font-[family-name:var(--font-playfair)] flex-1">
-                          {event.title}
-                        </h3>
-                        <Badge variant="secondary" className="ml-4">
-                          {event.status}
-                        </Badge>
-                      </div>
-
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 text-sm text-muted-foreground">
-                        <div className="flex items-center gap-2">
-                          <Calendar className="h-4 w-4 text-primary" />
-                          <span>{event.date}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Clock className="h-4 w-4 text-primary" />
-                          <span>{event.time}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <MapPin className="h-4 w-4 text-primary" />
-                          <span>{event.location}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Users className="h-4 w-4 text-primary" />
-                          <span>{event.capacity}</span>
-                        </div>
-                      </div>
-
-                      <p className="text-muted-foreground leading-relaxed mb-6 flex-1">{event.description}</p>
-
-                      <div className="flex flex-col sm:flex-row gap-3">
-                        <Link href={event.link} passHref>
-                          <Button>
-                            Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                          </Button>
-                        </Link>
-                      </div>
-                    </div>
-                  </CardContent>
-                </div>
-              </Card>
+              <EventCard key={event.id} event={event} layout="horizontal" />
             ))}
           </div>
         </div>

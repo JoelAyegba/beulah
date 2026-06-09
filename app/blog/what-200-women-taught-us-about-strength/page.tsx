@@ -22,7 +22,7 @@ export default function StoryPage() {
       <section className="relative py-20 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 pl-6">What 200 Women Taught us About Strength</h1>
+            <h1 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-playfair)] mb-6 pl-6">What 200 Women Taught us About Strength</h1>
 
             <div className="my-8">
               <Image
