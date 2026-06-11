@@ -42,7 +42,7 @@ const recentEvents = [
     type: "Outreach",
     image: "/fertility-grant-1.jpg",
     description:
-      "A one-day outreach where six women each received a ₦250,000 medical support grant towards their fertility journey.",
+      "A one-day outreach where 11 women each received a ₦250,000 medical support grant towards their fertility journey.",
     link: "/events/women-wellness-medical-outreach",
   },
   {

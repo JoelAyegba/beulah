@@ -5,7 +5,7 @@ import Image from "next/image"
 export const metadata = {
   title: "Women Wellness & Medical Outreach (Fertility Support)",
   description:
-    "A one-day outreach dedicated to the health, wellness, and empowerment of women, where six women received medical support grants of ₦250,000 each towards fertility care.",
+    "A one-day outreach dedicated to the health, wellness, and empowerment of women, where 11 women received medical support grants of ₦250,000 each towards fertility care.",
 }
 
 export default function WomenWellnessMedicalOutreachPage() {
@@ -50,7 +50,7 @@ export default function WomenWellnessMedicalOutreachPage() {
               <h2 className="pl-6 font-bold">Fertility Support Grants</h2>
               <p>
                 The highlight of the outreach was the presentation of medical support grants to women on their fertility
-                journey. <strong>Six women each received a grant of ₦250,000</strong> to help offset the cost of
+                journey. <strong>Eleven women each received a grant of ₦250,000</strong> to help offset the cost of
                 consultations, screenings, and fertility care. Recipients came forward one by one to receive their
                 cheques, in moments that were as emotional as they were hopeful.
               </p>
@@ -68,7 +68,7 @@ export default function WomenWellnessMedicalOutreachPage() {
               <h2 className="pl-6 font-bold">What the Day Offered</h2>
               <ul className="list-disc pl-5 text-muted-foreground mb-4">
                 <li>One-on-one registration and needs assessment for each attendee</li>
-                <li>Medical support grants of ₦250,000 to six women towards fertility care</li>
+                <li>Medical support grants of ₦250,000 to 11 women towards fertility care</li>
                 <li>Wellness and health education sessions</li>
                 <li>A safe, judgment-free space to discuss reproductive health</li>
               </ul>

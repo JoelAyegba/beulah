@@ -36,9 +36,9 @@ const pastEvents = [
     time: "9:00 AM - 4:00 PM",
     location: "Abuja, Nigeria",
     type: "Outreach",
-    capacity: "6 Grant Recipients",
+    capacity: "11 Grant Recipients",
     description:
-      "A one-day outreach dedicated to the health, wellness, and empowerment of women, where six women each received a medical support grant of ₦250,000 towards their fertility journey.",
+      "A one-day outreach dedicated to the health, wellness, and empowerment of women, where 11 women each received a medical support grant of ₦250,000 towards their fertility journey.",
     image: "/fertility-grant-1.jpg",
     status: "Completed",
     link: "/events/women-wellness-medical-outreach",
